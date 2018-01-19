@@ -105,7 +105,7 @@
 		echo "Failed to connect to MySQL: " . mysqli_connect_error();
 		exit;
 	}
-	$query = $link->query("SELECT * FROM kebutuhan_guru");
+	$query = $link->query("SELECT * FROM sebaran_guru");
 	$data=[];
 	//masukan data jumlah guru dan siswa ke array data
 	while($row=$query->fetch_assoc()){
@@ -167,7 +167,7 @@
 				<a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample" role="button" aria-expanded="false" aria-controls="multiCollapseExample">Inisialisasi</a>
 				<?php foreach ($hasil_iterasi as $key => $value) { ?>
 				<a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample<?php echo $key ?>" role="button" aria-expanded="false" aria-controls="multiCollapseExample<?php echo $key ?>">Iterasi ke <?php echo ($key+1); ?></a>
-				<?php } ?>
+				<?php }  ?>
 			</p>
 			<!-- <div class="col"> -->
 			<div class="row justify-content-md-center">
