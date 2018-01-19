@@ -353,9 +353,6 @@ Highcharts.chart('chartContainer', {
     title: {
         text: 'Klasterisasi Perbandingan Jumlah Guru dan Jumlah Siswa per Provinsi '
     },
-    subtitle: {
-        text: 'Source: Heinz  2003'
-    },
     xAxis: {
         title: {
             enabled: true,
